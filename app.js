@@ -3,7 +3,7 @@ import { routeBeta } from "./backend/routes/beta.js";
 
 
 const app = express();
-const port = process.env.PORT ?? 1245
+const PORT = process.env.PORT ?? 1245
 
 app.use(express.static('frontend'));
 // app.use('/frontend',static(__dirname + '/frontend'))
@@ -46,6 +46,6 @@ app.use(routeBeta)
 //     `);
 // });
 
-app.listen(port, ()=> {
-    console.log(`Servidor Express corriendo en el puerto http://localhost:${port}`)
+app.listen(PORT, ()=> {
+    console.log(`Servidor Express corriendo en el puerto http://localhost:${PORT}`)
 });
