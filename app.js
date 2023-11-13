@@ -1,5 +1,5 @@
 import express from "express";
-import { routeBeta } from "./backend/routes/beta.js";
+// import { routeBeta } from "./backend/routes/beta.js";
 
 
 const app = express();
@@ -24,7 +24,8 @@ app.get('/', (req, res) => {
     `);
 });
 
-app.use(routeBeta)
+// app.use(routeBeta)
+
 
 app.listen(PORT, ()=> {
     console.log(`Servidor Express corriendo en el puerto http://localhost:${PORT}`)
